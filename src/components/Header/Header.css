@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  margin-top: 50px;
+  height: 100vh;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  max-width: 24%;
+  max-height: 50%;
+  margin-left: 12vw;
+  padding: 20px 30px;
+
+  animation: fadeIn 3s;
+}
+
+.your-city {
+  color: #f88c61;
+  display: flex;
+  align-self: baseline;
+  margin-bottom: 20px;
+}
+
+.header-text-desc {
+  margin-bottom: 20px;
+}
+
+.header-text button {
+  display: flex;
+  border: 1px solid salmon;
+  color: white;
+  font-weight: bold;
+  padding: 1vw 2.3vw;
+  background-color: #f88c61;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
+  width: 10vw;
+  cursor: pointer;
+}
+
+.items-wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  width: 30vw;
+}
+
+.item {
+  border: 4px solid #f88c61;
+  border-radius: 12%;
+  height: 40vh;
+}
+
+.item img {
+  width: 150px;
+  margin-top: 40px;
+  border-radius: 30%;
+}

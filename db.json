@@ -1,0 +1,196 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "title": "Classic Burger",
+      "price": 8.99,
+      "description": "A classic beef burger with lettuce, tomato, and cheese.",
+      "category": "burgers",
+      "image": "src/assets/burger-1.png"
+    },
+    {
+      "id": 2,
+      "title": "Sweet Potato Fries",
+      "price": 4.99,
+      "description": "Crispy sweet potato fries topped with fresh parsley.",
+      "category": "sides",
+      "image": "src/assets/fries-2.png"
+    },
+    {
+      "id": 3,
+      "title": "Margarita Pizza",
+      "price": 10.99,
+      "description": "Traditional Margarita pizza with fresh basil, tomatoes, and mozzarella cheese.",
+      "category": "pizzas",
+      "image": "src/assets/margarita.png"
+    },
+    {
+      "id": 4,
+      "title": "Spaghetti Carbonara",
+      "price": 12.99,
+      "description": "Classic spaghetti carbonara with pancetta, Parmesan, and a creamy egg sauce.",
+      "category": "pastas",
+      "image": "src/assets/carbonara.png"
+    },
+    {
+      "id": 5,
+      "title": "Chocolate Lava Cake",
+      "price": 6.99,
+      "description": "Warm chocolate cake with a molten center, served with vanilla ice cream.",
+      "category": "dessert",
+      "image": "src/assets/choc-cake.png"
+    },
+    {
+      "id": 6,
+      "title": "BBQ Bacon Burger",
+      "price": 9.99,
+      "description": "Beef burger with BBQ sauce, crispy bacon and cheddar cheese",
+      "category": "burgers",
+      "image": "src/assets/burger-8.png"
+    },
+    {
+      "id": 7,
+      "title": "Garlic Parmesan Fries",
+      "price": 5.99,
+      "description": "Crispy fries tossed with garlic and Parmesan cheese.",
+      "category": "sides",
+      "image": "src/assets/garlic-fries.png"
+    },
+    {
+      "id": 8,
+      "title": "Pepperoni Pizza",
+      "price": 11.99,
+      "description": "Classic pepperoni pizza with mozzarella cheese and marinara sauce.",
+      "category": "pizzas",
+      "image": "src/assets/pepperoni.png"
+    },
+    {
+      "id": 9,
+      "title": "Fettuccine Alfredo",
+      "price": 13.99,
+      "description": "Creamy fettuccine Alfredo with Parmesan cheese and parsley.",
+      "category": "pastas",
+      "image": "src/assets/alfredo.png"
+    },
+    {
+      "id": 10,
+      "title": "Cheesecake",
+      "price": 7.99,
+      "description": "Classic New York cheesecake with a graham cracker crust.",
+      "category": "dessert",
+      "image": "src/assets/cheesecake.png"
+    },
+    {
+      "id": 11,
+      "title": "Veggie Burger",
+      "price": 8.49,
+      "description": "Grilled veggie patty with lettuce, tomato, avocado, and sprouts.",
+      "category": "burgers",
+      "image": "src/assets/veggie.png"
+    },
+    {
+      "id": 12,
+      "title": "Mozzarella Sticks",
+      "price": 6.49,
+      "description": "Fried mozzarella sticks served with marinara sauce.",
+      "category": "sides",
+      "image": "src/assets/sticks.png"
+    },
+    {
+      "id": 13,
+      "title": "Hawaiian Pizza",
+      "price": 12.49,
+      "description": "Pizza topped with ham, pineapple, and mozzarella cheese.",
+      "category": "pizzas",
+      "image": "src/assets/hawaii.png"
+    },
+    {
+      "id": 14,
+      "title": "Penne Arrabbiata",
+      "price": 11.49,
+      "description": "Penne pasta in a spicy tomato sauce with garlic and chili flakes.",
+      "category": "pastas",
+      "image": "src/assets/penne.png"
+    },
+    {
+      "id": 15,
+      "title": "Tiramisu",
+      "price": 8.99,
+      "description": "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
+      "category": "dessert",
+      "image": "src/assets/tiramisu.png"
+    },
+    {
+      "id": 16,
+      "title": "Chicken Burger",
+      "price": 9.49,
+      "description": "Grilled chicken breast with lettuce, tomato, and mayo on a toasted bun.",
+      "category": "burgers",
+      "image": "src/assets/chicken-burger.png"
+    },
+    {
+      "id": 17,
+      "title": "Onion Rings",
+      "price": 5.49,
+      "description": "Crispy battered onion rings served with ranch dipping sauce.",
+      "category": "sides",
+      "image": "src/assets/onion.png"
+    },
+    {
+      "id": 18,
+      "title": "Four Cheese Pizza",
+      "price": 13.99,
+      "description": "Pizza with mozzarella, cheddar, Parmesan, and gorgonzola cheeses.",
+      "category": "pizzas",
+      "image": "src/assets/four-cheese.png"
+    },
+    {
+      "id": 19,
+      "title": "Lasagna Bolognese",
+      "price": 14.99,
+      "description": "Traditional lasagna with layers of pasta, meat sauce, and cheese.",
+      "category": "pastas",
+      "image": "src/assets/lasagna.png"
+    },
+    {
+      "id": 20,
+      "title": "Brownie Sundae",
+      "price": 7.49,
+      "description": "Warm brownie topped with vanilla ice cream, chocolate sauce, and whipped cream.",
+      "category": "dessert",
+      "image": "src/assets/milkshake-1.png"
+    },
+    {
+      "id": 21,
+      "title": "Frida Early Bird",
+      "price": 2.49,
+      "description": "A refreshing blend of citrus flavors to kickstart your day.",
+      "category": "soda",
+      "image": "src/assets/soda-1.png"
+    },
+    {
+      "id": 22,
+      "title": "Olipop",
+      "price": 3.99,
+      "description": "A delightful combination of sweet strawberry and creamy vanilla.",
+      "category": "soda",
+      "image": "src/assets/soda-2.png"
+    },
+    {
+      "id": 23,
+      "title": "Calpis Water",
+      "price": 2.99,
+      "description": "A unique Japanese soda with a light, milky taste and a hint of citrus.",
+      "category": "soda",
+      "image": "src/assets/soda-3.png"
+    },
+    {
+      "id": 24,
+      "title": "Positive Energy",
+      "price": 3.49,
+      "description": "An invigorating drink with a boost of natural caffeine and a burst of tropical flavor.",
+      "category": "soda",
+      "image": "src/assets/soda-4.png"
+    }
+  ]
+}

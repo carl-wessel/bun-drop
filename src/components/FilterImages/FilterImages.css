@@ -1,0 +1,30 @@
+.food-item {
+  display: flex;
+  justify-content: center;
+}
+
+.food-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.food-item-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 4px solid transparent;
+}
+
+.food-item-container.selected .food-item-image {
+  border-color: #f88c61;
+}
+
+.clearFilterX {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

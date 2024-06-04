@@ -1,0 +1,9 @@
+.cart {
+  height: 60vh;
+}
+
+.cart-placeholder {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid black;
+}
