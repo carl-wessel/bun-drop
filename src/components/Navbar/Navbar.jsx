@@ -1,17 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [navbar, setNavbar] = useState("home");
+  const [navbar, setNavbar] = useState("/");
+
+  const [whereAmI, setWhereAmI] = useState(window.location.pathname);
+  useEffect(() => {
+    setNavbar(whereAmI);
+  }, [whereAmI]);
+
   return (
     <div className="navbar">
       <img src="src/assets/logo color.png" alt="" className="logo" />
       <ul className="navbar-menu">
         <Link to="/">
           <li
-            onClick={() => setNavbar("home")}
-            className={navbar === "home" ? "active" : ""}
+            onClick={() => setNavbar("/")}
+            className={navbar === "/" ? "active" : ""}
           >
             Home
           </li>
@@ -19,8 +25,8 @@ function Navbar() {
 
         <Link to="/menu">
           <li
-            onClick={() => setNavbar("menu")}
-            className={navbar === "menu" ? "active" : ""}
+            onClick={() => setNavbar("/menu")}
+            className={navbar === "/menu" ? "active" : ""}
           >
             Menu
           </li>
@@ -28,16 +34,16 @@ function Navbar() {
 
         <Link to="/cart">
           <li
-            onClick={() => setNavbar("orders")}
-            className={navbar === "orders" ? "active" : ""}
+            onClick={() => setNavbar("/cart")}
+            className={navbar === "/cart" ? "active" : ""}
           >
             Orders
           </li>
         </Link>
         <Link to="/about-us">
           <li
-            onClick={() => setNavbar("about-us")}
-            className={navbar === "about-us" ? "active" : ""}
+            onClick={() => setNavbar("/about-us")}
+            className={navbar === "/about-us" ? "active" : ""}
           >
             About us
           </li>

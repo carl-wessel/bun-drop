@@ -1,9 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.cart-wrapper {
+  min-height: 60vh;
+}
+
 .cart {
   height: 60vh;
 }
 
 .cart-placeholder {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-placeholder button {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid salmon;
+  color: white;
+  font-weight: bold;
+  padding: 1vw 2.3vw;
+  background-color: #f88c61;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
+  width: 20vw;
+  cursor: pointer;
+}
+
+.cart-orders {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.cart-orders img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.cart-checkout {
+  display: flex;
   justify-content: space-around;
-  border: 2px solid black;
+  width: 100%;
+  height: 100px;
+}
+#proceed-to-checkout-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-checkout button {
+  width: 100px;
+  height: 70px;
+  margin-top: 5px;
+  border-radius: 12%;
+  background-color: #f88c61;
+  cursor: pointer;
+  font-family: Rubik;
+  font-weight: 500;
+}
+
+.food-div {
+  display: flex;
+  margin-top: 25px;
+  width: 30%;
+  flex-direction: column;
+  text-align: center;
+}
+
+#remove-item {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
 }
