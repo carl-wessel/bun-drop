@@ -13,38 +13,31 @@ const Header = () => {
         </p>
         <button>Order Now</button>
       </div>
-
-      <div className="items-wrapper">
-        <div className="item">
-          <img src="src/assets/alfredo.png" alt="" />
-          <h2>Fettuccine Alfredo</h2>
-          <p>Price: $13.99</p>
-          <p>Creamy fettuccine Alfredo with Parmesan cheese and parsley.</p>
-          <button>Add to Cart</button>
+      <div className="header-wrapper">
+        <div className="items-wrapper-text">
+          <h1>Our most popular foods!</h1>
         </div>
-        <div className="item">
-          <img src="src/assets/burger-8.png" alt="" />
-          <h2>BBQ Bacon Burger</h2>
-          <p>Price: $9.99</p>
-          <p>
-            Beef burger with BBQ sauce, crispy bacon, cheddar cheese, and onion
-            rings.
-          </p>
-          <button>Add to Cart</button>
-        </div>
-        <div className="item">
-          <img src="src/assets/alfredo.png" alt="" />
-          <h2>Fettuccine Alfredo</h2>
-          <p>Price: $13.99</p>
-          <p>Creamy fettuccine Alfredo with Parmesan cheese and parsley.</p>
-          <button>Add to Cart</button>
-        </div>
-        <div className="item">
-          <img src="src/assets/alfredo.png" alt="" />
-          <h2>Fettuccine Alfredo</h2>
-          <p>Price: $13.99</p>
-          <p>Creamy fettuccine Alfredo with Parmesan cheese and parsley.</p>
-          <button>Add to Cart</button>
+        <div className="items-wrapper">
+          <div className="item">
+            <img src="src/assets/alfredo.png" alt="" />
+            <h2>Fettuccine Alfredo</h2>
+            <p>Price: $13.99</p>
+          </div>
+          <div className="item">
+            <img src="src/assets/burger-8.png" alt="" />
+            <h2>BBQ Bacon Burger</h2>
+            <p>Price: $9.99</p>
+          </div>
+          <div className="item">
+            <img src="src/assets/garlic-fries.png" alt="" />
+            <h2>Garlic Parmesan Fries</h2>
+            <p>Price: $5.99</p>
+          </div>
+          <div className="item">
+            <img src="src/assets/four-cheese.png" alt="" />
+            <h2>Veggie Burger</h2>
+            <p>Price: $8.49</p>
+          </div>
         </div>
       </div>
     </div>

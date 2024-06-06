@@ -1,35 +1,34 @@
 import React, { useState, useEffect } from "react";
+import useLocalStorage from "../../hooks/useLocalStorage";
 import "./FoodItem.css";
 
-const FoodItem = (props) => {
-  const [foodCount, setFoodCount] = useState(0);
-  const [orderStorage, setOrderStorage] = useState({});
+const FoodItem = ({ id, title, price, image, description }) => {
+  const { addToCart, removeFromCart, getCart } = useLocalStorage();
+  const [cart, setCart] = useState([]);
 
-  async function addFoodToCart() {
-    const orderObject = {
-      count: foodCount,
-      title: props.title,
-      price: props.price,
-      image: props.image,
-    };
-    setOrderStorage(orderObject);
-
-    await localStorage.setItem("orders", JSON.stringify(orderStorage));
+  function handleAddFoodToCart() {
+    addToCart({ id, title, price, image });
+    setCart(getCart());
   }
-  console.log(foodCount);
-  console.log(orderStorage);
 
+  function handleRemoveFromCart() {
+    removeFromCart(id);
+    setCart(getCart());
+  }
+
+  useEffect(() => {
+    setCart(getCart());
+  }, []);
   return (
     <div className="food-card">
-      <img className="food-image" src={`${props.image}`} alt="" />
-      <h1>{props.title}</h1>
-      <h3>{props.description}</h3>
-      <p>${props.price}</p>
-      {!foodCount ? (
+      <img className="food-image" src={`${image}`} alt="" />
+      <h1>{title}</h1>
+      <h3>{description}</h3>
+      <p>${price}</p>
+      {!cart.find((c) => c.id === id) ? (
         <img
           onClick={() => {
-            setFoodCount(foodCount + 1);
-            addFoodToCart();
+            handleAddFoodToCart();
           }}
           className="add-item"
           src="src/assets/icons8-plus-50.png"
@@ -39,17 +38,15 @@ const FoodItem = (props) => {
         <div className="food-counter">
           <img
             onClick={() => {
-              setFoodCount(foodCount - 1);
-              addFoodToCart();
+              handleRemoveFromCart();
             }}
             src="src/assets/icons8-redminus-60.png"
             alt=""
           />
-          <p>{foodCount}</p>
+          <p>{cart.find((c) => c.id === id).count}</p>
           <img
             onClick={() => {
-              setFoodCount(foodCount + 1);
-              addFoodToCart();
+              handleAddFoodToCart();
             }}
             src="src/assets/icons8-greenplus-60.png"
             alt=""

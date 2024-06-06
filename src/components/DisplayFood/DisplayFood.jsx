@@ -42,6 +42,7 @@ const DisplayFood = () => {
         {updatedMenu.map((item) => (
           <div key={item.id} className="wrapper-card">
             <FoodItem
+              id={item.id}
               title={item.title}
               description={item.description}
               price={item.price}

@@ -1,17 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import useLocalStorage from "../../hooks/useLocalStorage";
 import "./Orders.css";
 
-const Orders = () => {
-  const [items, setItems] = useState([]);
+const Orders = ({ id, title, price, count, image }) => {
+  const [cart, setCart] = useState([]);
 
-  useEffect(() => {
-    const localStorageOrders = JSON.parse(localStorage.getItem("items"));
-    if (localStorageOrders) {
-      setItems(localStorageOrders);
-    }
-  }, []);
-
-  console.log(items);
   return (
     <>
       <div className="cart">
@@ -22,7 +15,12 @@ const Orders = () => {
           <h3>Quantity</h3>
           <h3>Total</h3>
         </div>
-        <div className="cart-orders"></div>
+        <div className="cart-orders">
+          <img src={image} alt="" />
+          <h3>{title}</h3>
+          <h3>{price}</h3>
+          <h3>{count}</h3>
+        </div>
       </div>
     </>
   );
