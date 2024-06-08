@@ -5,6 +5,7 @@ import Menu from "./pages/Menu/Menu";
 import Cart from "./pages/Cart/Cart";
 import Navbar from "./components/Navbar/Navbar";
 import Checkout from "./pages/Checkout/Checkout";
+import Confirmation from "./pages/Confirmation/Confirmation";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
             <Route path="/menu" element={<Menu />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
-
+            <Route path="/confirmation" element={<Confirmation />} />
             {/* TODO:  */}
             {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>

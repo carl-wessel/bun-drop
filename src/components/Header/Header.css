@@ -22,7 +22,7 @@
 .your-city {
   color: #f88c61;
   display: flex;
-  align-self: baseline;
+  align-self: center;
   margin-bottom: 20px;
 }
 
@@ -69,11 +69,12 @@
 .item {
   border: 4px solid #f88c61;
   border-radius: 12%;
-  height: 40vh;
+  height: 30vh;
 }
 
 .item img {
   width: 150px;
+  height: 150px;
   margin-top: 40px;
   border-radius: 30%;
 }

@@ -50,11 +50,6 @@
   width: 100%;
   height: 100px;
 }
-#proceed-to-checkout-button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .cart-checkout button {
   width: 100px;
@@ -79,4 +74,8 @@
   cursor: pointer;
   height: 30px;
   width: 30px;
+}
+
+#food-price {
+  margin: 3vw;
 }

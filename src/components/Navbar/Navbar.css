@@ -11,9 +11,10 @@
 .navbar-menu {
   display: flex;
   list-style: none;
-  gap: 70px;
+  gap: 100px;
   font-weight: bold;
   font-size: 17px;
+  margin-right: 75px;
 }
 
 .navbar .active {
@@ -23,12 +24,6 @@
 li {
   color: #3e3636;
   cursor: pointer;
-}
-
-.navbar-right {
-  display: flex;
-  align-items: center;
-  gap: 40px;
 }
 
 .navbar-cart-icon {

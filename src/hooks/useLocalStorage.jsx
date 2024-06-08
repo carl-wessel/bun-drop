@@ -36,17 +36,29 @@ function useLocalStorage() {
         return c;
       }
     });
+
     if (!itemExists) {
       newCart.push({ ...item, count: 1 });
     }
+
     setLocalStorage("cart", newCart);
   }
+
+  const calculateFoodPrice = () => {
+    const cart = JSON.parse(localStorage.getItem("cart"));
+    let total = 0;
+    cart.map((item) => {
+      total += item.price * item.count;
+    });
+    return total;
+  };
 
   return {
     setLocalStorage,
     getCart,
     removeFromCart,
     addToCart,
+    calculateFoodPrice,
   };
 }
 

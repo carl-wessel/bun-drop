@@ -1,0 +1,93 @@
+.checkout-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+  background-color: blanchedalmond;
+  border: 1px solid salmon;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-wrapper,
+.bank-card,
+.swish,
+.total-amount {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.inputs p,
+.bank-card p,
+.swish p,
+.payment-method p {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.inputs input,
+.bank-card input,
+.swish input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.payment-method {
+  margin-bottom: 20px;
+}
+
+.payment-method label {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.total-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  border: 2px solid salmon;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.total-amount p,
+.total-amount h3 {
+  margin: 10px 0;
+}
+
+button {
+  background-color: salmon;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darksalmon;
+}

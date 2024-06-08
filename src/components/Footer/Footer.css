@@ -19,16 +19,12 @@
   width: 50px;
 }
 
-.left-footer {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
 .footer h3 {
   margin-bottom: 50px;
   color: white;
   margin-top: 10px;
 }
+
 .footer p {
   color: white;
 }
@@ -55,4 +51,7 @@
   grid-template-columns: 1fr;
 }
 
-/* 332018 */
+.left-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+}

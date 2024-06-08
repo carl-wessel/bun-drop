@@ -2,31 +2,27 @@ import React, { useState, useEffect } from "react";
 import useLocalStorage from "../../hooks/useLocalStorage";
 import "./Orders.css";
 import { Link } from "react-router-dom";
+import ProceedToCheckoutButton from "../ProceedToCheckoutButton";
+import RemoveButtonForCart from "../RemoveButtonForCart";
 
-const Orders = () => {
-  const { getCart, removeFromCart } = useLocalStorage();
+const Orders = ({
+  showRemoveButton = true,
+  showCheckoutButton = true,
+  showFoodPrice = true,
+}) => {
+  const { getCart, removeFromCart, calculateFoodPrice } = useLocalStorage();
   const [cart, setCart] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
-    const cartItems = getCart();
-    setCart(cartItems);
-    calculateTotalPrice(cartItems);
+    setCart(getCart());
+    calculateFoodPrice();
   }, []);
-
-  const calculateTotalPrice = (cartItems) => {
-    let total = 0;
-    cartItems.map((item) => {
-      total += item.price * item.count;
-    });
-    setTotalPrice(total);
-  };
 
   const handleRemoveFromCart = (id) => {
     removeFromCart(id);
     const updatedCart = getCart();
     setCart(updatedCart);
-    calculateTotalPrice(updatedCart);
+    calculateFoodPrice(updatedCart);
   };
 
   return (
@@ -57,21 +53,18 @@ const Orders = () => {
                 <h3>Price</h3>
                 <p>${price}</p>
               </div>
-              <img
-                onClick={() => handleRemoveFromCart(id)}
-                id="remove-item"
-                src="src/assets/ClearFilter.png"
-                alt=""
-              />
+              {showRemoveButton && (
+                <RemoveButtonForCart onClick={() => handleRemoveFromCart(id)} />
+              )}
             </div>
           ))}
           <div className="cart-checkout">
-            <div id="checout-button">
-              <button>Proceed to Checkout</button>
-            </div>
-            <div id="total-price">
-              <h3>Total Price: ${totalPrice.toFixed(2)}</h3>
-            </div>
+            {showCheckoutButton && <ProceedToCheckoutButton />}
+            {showFoodPrice && (
+              <div id="food-price">
+                <h3>Food: ${parseFloat(calculateFoodPrice()).toFixed(2)}</h3>
+              </div>
+            )}
           </div>
         </>
       )}

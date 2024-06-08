@@ -10,7 +10,10 @@ const Header = () => {
         <h1 className="your-city">Your City</h1>
         <p className="header-text-desc">
           We pride ourselves in delivering the best food to your doorstep in
-          record time
+          record time. Whether it's a quick lunch break or a cozy dinner at
+          home, we ensure that every meal is prepared with care and delivered
+          fresh to you. Experience the convenience and delight of our speedy
+          delivery service today!
         </p>
         <Link to="/menu">
           <button>Order Now</button>
@@ -38,7 +41,7 @@ const Header = () => {
           </div>
           <div className="item">
             <img src="src/assets/four-cheese.png" alt="" />
-            <h2>Veggie Burger</h2>
+            <h2>Four Cheese Pizza</h2>
             <p>Price: $8.49</p>
           </div>
         </div>
