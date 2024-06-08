@@ -52,10 +52,11 @@
 }
 
 .cart-checkout button {
-  width: 100px;
-  height: 70px;
+  width: 200px;
+  height: 50px;
+  margin-right: 250px;
   margin-top: 5px;
-  border-radius: 12%;
+  border-radius: 40px;
   background-color: #f88c61;
   cursor: pointer;
   font-family: Rubik;
@@ -77,5 +78,5 @@
 }
 
 #food-price {
-  margin: 3vw;
+  margin: 2vw;
 }

@@ -9,12 +9,13 @@
 .header-text {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   max-width: 24%;
   max-height: 50%;
   margin-left: 12vw;
   padding: 20px 30px;
+  text-align: center;
 
   animation: fadeIn 3s;
 }
@@ -24,10 +25,12 @@
   display: flex;
   align-self: center;
   margin-bottom: 20px;
+  font-size: 40px;
 }
 
 .header-text-desc {
   margin-bottom: 20px;
+  font-size: large;
 }
 
 .header-text button {

@@ -8,6 +8,7 @@
 }
 body {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 a {
@@ -17,6 +18,7 @@ a {
 
 .app {
   margin: auto;
+  overflow-x: hidden;
 }
 @keyframes fadeIn {
   0% {

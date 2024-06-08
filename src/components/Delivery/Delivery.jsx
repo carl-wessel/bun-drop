@@ -12,8 +12,7 @@ const Delivery = () => {
     return [startTime, endTime];
   }
 
-  const [start, end] = getRandomTimeInterval(10, 20, 30, 40);
-  console.log(`Random time interval: ${start} - ${end} minutes`);
+  const [start, end] = getRandomTimeInterval(15, 20, 30, 40);
 
   return (
     <div>

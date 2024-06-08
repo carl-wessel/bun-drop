@@ -1,8 +1,20 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import useLocalStorage from "../../hooks/useLocalStorage";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
+  const { getCart } = useLocalStorage();
+  const [cartItems, setCartItems] = useState([]);
+  const location = useLocation();
+
+  useEffect(() => {
+    const cart = getCart();
+    setCartItems(cart);
+  }, [cartItems]);
+
+  const isConfirmationPage = location.pathname === "/confirmation";
+
   return (
     <div className="navbar">
       <img src="src/assets/logo color.png" alt="" className="logo" />
@@ -24,7 +36,9 @@ function Navbar() {
           <Link to="/cart">
             <img className="cart-icon" src="src/assets/Cart.png" alt="" />
           </Link>
-          <div className="dot"></div>
+          {!isConfirmationPage && cartItems.length > 0 && (
+            <div className="dot"></div>
+          )}{" "}
         </div>
       </div>
     </div>

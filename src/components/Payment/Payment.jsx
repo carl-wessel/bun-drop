@@ -181,10 +181,10 @@ const Payment = () => {
           </div>
         )}
         <div className="total-amount">
-          <p>Food: {calculateFoodPrice()} $</p>
+          <p>Food: {parseFloat(calculateFoodPrice()).toFixed(2)} $</p>
           <p>Delivery Fee: 7 $</p>
           <p>Service Fee: 2 $</p>
-          <h3>Total Price: {calculateFoodPrice() + 7 + 2} $</h3>
+          <h3>Total Price: {parseFloat(calculateFoodPrice()) + 2 + 7} $</h3>
         </div>
 
         <button type="submit">Checkout</button>
